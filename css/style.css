@@ -17,6 +17,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -465,4 +469,103 @@ section.contact .input-wrap-2 textarea{
 
 section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
     outline: none;
+    border-color: var(--secondary);
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 200px;
+}
+
+footer .footer-socials a{
+    margin-right: 1rem;
+}
+
+footer .footer-socials{
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+
+footer .copyright{
+    color: var(--ternary);
+}
+
+
+@media (max-width: 1024px){
+    header #main-nav{
+        display:none;
+    }
+}
+
+.site-main-wrapper{
+    position: relative;
+
+}
+.hamberger{
+    position: absolute;
+    top:40px;
+    right:40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hamberger img{
+    width: 2rem;
+
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 1000%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    /* transform: translateX(-100%); */
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 2rem;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
 }
